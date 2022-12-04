@@ -25,3 +25,13 @@ section:not(.hero) {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+
+.activities {
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}

@@ -107,6 +107,11 @@ section:not(.hero) {
   color: var(--second-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .activities {
+    display: none;
+  }
+}
 /* Contacts in header */
 .contacts {
   display: -webkit-box;

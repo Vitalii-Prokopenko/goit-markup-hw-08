@@ -1,0 +1,27 @@
+/* Paddings for all sections except Hero */
+
+section:not(.hero) {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+/* Zero bottom padding for feature section */
+
+//overflows previous padding
+
+.features {
+  padding-bottom: 0;
+}
+
+/* Visually observed section elements */
+
+.visually-observed {
+  margin-bottom: 50px;
+
+  font-style: normal;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}

@@ -1,0 +1,70 @@
+/* === FOOTER === */
+
+.footer {
+  padding: 60px 0;
+
+  background-color: $background-footer;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__contacts {
+    flex-direction: column;
+
+    &-item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+
+    /* Email and phone interactive contacts in footer */
+
+    &-link {
+      justify-content: left;
+
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+
+      color: $interactive-contacts-in-footer-color;
+    }
+  }
+
+  &__social-link {
+    background-color: $footer-social-link-background-color;
+    fill: $white-color;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
+
+/* Postal address not interactive contact in footer */
+
+.postal-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+
+/* Studio social links */
+
+.social-links-heading-in-footer,
+.subscribe-heading {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+}

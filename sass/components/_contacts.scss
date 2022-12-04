@@ -1,0 +1,32 @@
+/* Contacts in header */
+
+.contacts {
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-size: 14px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Hover and focus for contacts-links */
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  /* Color of hovered / focused icons */
+
+  &__icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+  }
+}

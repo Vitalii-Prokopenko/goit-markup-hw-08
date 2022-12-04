@@ -1,0 +1,43 @@
+/* Main menu */
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-left: 93px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $second-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Hover and focus for nav-links */
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}

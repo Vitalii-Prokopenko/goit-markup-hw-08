@@ -1,0 +1,18 @@
+/* Underline of current page */
+
+.current {
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 4px;
+
+    content: '';
+    background-color: $accent-color;
+  }
+}

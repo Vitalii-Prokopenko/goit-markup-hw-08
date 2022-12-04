@@ -1,0 +1,32 @@
+/* Line border */
+
+.header {
+  border-bottom: 1px solid $header-bottom-border-color;
+
+  /* Header container */
+
+  &__container {
+    display: flex;
+  }
+
+  &__contacts {
+    margin-left: auto;
+
+    &-item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &-link {
+      justify-content: center;
+
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      color: $main-color;
+    }
+  }
+}

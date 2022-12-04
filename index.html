@@ -16,21 +16,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-   <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
     <!-- === HEADER === -->
 
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-
           <!-- == Logo == -->
 
-          <a class="link logo" href="/" lang="en"
-            >Web<span class="logo--dark">Studio</span></a
-          >
+          <a class="link logo" href="/" lang="en">Web<span class="logo--dark">Studio</span></a>
 
           <!-- Menu -->
 
@@ -73,7 +69,6 @@
     <!-- === The main part of page Studio === -->
 
     <main>
-
       <!-- === Hero === -->
 
       <section class="hero">
@@ -88,7 +83,7 @@
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Особоливості</h2>
-          <ul class=" list feature-list">
+          <ul class="list feature-list">
             <li class="feature-list__item feature">
               <div class="feature__icon-div">
                 <svg class="feature__icon" width="70" height="70">
@@ -143,7 +138,6 @@
         <div class="container">
           <h2 class="visually-observed">Чим ми займаємося</h2>
           <ul class="list activities-list">
-
             <!-- Programming -->
 
             <li class="activities-list__item activity">
@@ -195,15 +189,13 @@
         <div class="container">
           <h2 class="visually-observed">Наша команда</h2>
           <ul class="list team-list">
-
             <!-- Product designer Ігор Дем'яненко -->
 
             <li class="team-list__item member">
               <img
                 src="images/team/img-product-designer.jpg"
                 alt="product designer Ігор Дем'яненко"
-                width="270"
-                height="260"
+                class="member__img"
               />
               <div class="member__meta">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
@@ -247,8 +239,7 @@
               <img
                 src="images/team/img-frontend-developer.jpg"
                 alt="frontend developer Ольга Репіна"
-                width="270"
-                height="260"
+                class="member__img"
               />
               <div class="member__meta">
                 <h3 class="member__name">Ольга Репіна</h3>
@@ -292,8 +283,7 @@
               <img
                 src="images/team/img-marketing.jpg"
                 alt="marketing Микола Тарасов"
-                width="270"
-                height="260"
+                class="member__img"
               />
               <div class="member__meta">
                 <h3 class="member__name">Микола Тарасов</h3>
@@ -337,8 +327,7 @@
               <img
                 src="images/team/img-ui-designer.jpg"
                 alt="ui-designer Михайло Єрмаков"
-                width="270"
-                height="260"
+                class="member__img"
               />
               <div class="member__meta">
                 <h3 class="member__name">Михайло Єрмаков</h3>
@@ -436,11 +425,9 @@
 
     <footer class="footer">
       <div class="container footer-container">
-
         <!-- 1st block in footer Address and contacts -->
 
         <div class="footer-block">
-
           <!-- Logo -->
 
           <a href="/" lang="en" class="link logo footer__logo"
@@ -449,22 +436,25 @@
           <address class="address">
             <ul class="list contacts footer__contacts">
               <li class="contacts__item footer__contacts-item">
-
                 <!-- Postal address not interactive contact -->
 
                 <p class="postal-address">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
               <li class="contacts__item footer__contacts-item">
-
                 <!-- Email interactive contact -->
 
-                <a class="link contacts__link footer__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a
+                  class="link contacts__link footer__contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="contacts__item footer__contacts-item">
-
                 <!-- Phone interactive contact -->
 
-                <a class="link contacts__link footer__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="link contacts__link footer__contacts-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>

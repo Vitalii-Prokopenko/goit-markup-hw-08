@@ -4,7 +4,14 @@
   background-color: $background-color-second;
 
   &-list {
-    display: flex;
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &-list__item {
@@ -12,15 +19,86 @@
     box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
+    @media screen and (min-width: $mobile) {
+      width: 100%;
+    }
+    @media screen and (min-width: $tablet) {
       margin-right: 30px;
+      width: calc((100% - 1 * 30px) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: calc($desktop - 1px)) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
+    }
+
+    &:nth-child(2n) {
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        margin-right: 0;
+      }
+      @media screen and (min-width: $desktop) {
+      }
+    }
+
+    &:nth-child(4n) {
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-last-child(-n + 2) {
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 }
 
 .member {
+  &__img {
+    max-width: 450px;
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+      height: 460px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+      height: 374px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+      height: 260px;
+    }
+  }
+
   &__meta {
-    padding: 30px 15px;
+    padding: 30px 15px 24px;
+    
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 30px;
+    }
   }
 
   &__name {
@@ -29,31 +107,59 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.1875;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $second-color;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__position {
     margin-bottom: 16px;
 
     font-size: 16px;
-    line-height: 1.1875;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $main-color;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__social-link {
     fill: $background-color-social-link;
     background-color: inherit;
 
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+
     &:hover,
     &:focus {
       fill: $white-color;
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 }

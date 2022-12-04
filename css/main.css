@@ -422,63 +422,82 @@ section:not(.hero) {
 }
 
 /* == Feature section == */
-@media screen and (min-width: 1200px) {
+.feature-list {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
   .feature-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
-.feature-list__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .feature-list__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 1200px) {
   .feature-list__item {
-    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
   }
 }
-@media screen and (min-width: 1200px) {
-  .feature-list__item:last-child {
+@media screen and (max-width: 1199px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list__item:nth-child(2n) {
     margin-right: 0;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .feature-list__item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature-list__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
 .feature__icon-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 120px;
   width: 100%;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-@media screen and (min-width: 1200px) {
-  .feature__icon-div {
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 .feature__heading {
+  margin-bottom: 10px;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
-@media screen and (min-width: 1200px) {
-  .feature__heading {
-    margin-bottom: 10px;
-  }
-}
 .feature__description {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 /* == Activities section == */

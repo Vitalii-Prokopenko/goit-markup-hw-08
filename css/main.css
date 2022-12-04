@@ -66,9 +66,23 @@ body {
 
 /* Container */
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Paddings for all sections except Hero */
@@ -408,37 +422,48 @@ section:not(.hero) {
 }
 
 /* == Feature section == */
-.feature-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .feature-list__item {
-  margin-right: 30px;
   width: 270px;
 }
-.feature-list__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .feature__icon-div {
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 120px;
   width: 100%;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .feature__icon-div {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .feature__heading {
-  margin-bottom: 10px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.14;
@@ -446,12 +471,16 @@ section:not(.hero) {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .feature__heading {
+    margin-bottom: 10px;
+  }
+}
 .feature__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
 /* == Activities section == */
 .activities-list {
   display: -webkit-box;

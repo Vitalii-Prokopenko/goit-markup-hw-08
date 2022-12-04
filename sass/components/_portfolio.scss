@@ -6,12 +6,26 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
   &__item {
     position: relative;
 
     margin: 15px;
 
     background-color: $white-color;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__link {
@@ -19,8 +33,22 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+
     &:hover {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 }
@@ -32,6 +60,13 @@
   border-right: 1px solid $portfolio-card-border-color;
   border-bottom: 1px solid $portfolio-card-border-color;
 
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
   &__name {
     margin-bottom: 4px;
 
@@ -41,6 +76,13 @@
     letter-spacing: 0.06em;
 
     color: $second-color;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__type {
@@ -49,6 +91,13 @@
     letter-spacing: 0.03em;
 
     color: $main-color;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 }
 
@@ -63,6 +112,13 @@
 
     width: 100%;
     height: 100%;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__description {
@@ -84,8 +140,22 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
 
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+
     .grid__link:hover & {
       transform: translateY(0%);
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 }

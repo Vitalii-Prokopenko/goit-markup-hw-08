@@ -5,21 +5,56 @@
 
   background-color: $background-footer;
 
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__logo {
     margin-bottom: 20px;
+
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
   }
 
   &__contacts {
     flex-direction: column;
 
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+
     &-item:not(:last-child) {
       margin-bottom: 9px;
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
 
     /* Email and phone interactive contacts in footer */
@@ -31,6 +66,13 @@
       letter-spacing: 0.03em;
 
       color: $interactive-contacts-in-footer-color;
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 
@@ -38,9 +80,23 @@
     background-color: $footer-social-link-background-color;
     fill: $white-color;
 
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+
     &:hover,
     &:focus {
       background-color: $accent-color;
+
+      @media screen and (min-width: $mobile) {
+      }
+      @media screen and (min-width: $tablet) {
+      }
+      @media screen and (min-width: $desktop) {
+      }
     }
   }
 }
@@ -52,6 +108,13 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $white-color;
+
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 /* Studio social links */
@@ -67,4 +130,11 @@
   letter-spacing: 0.03em;
 
   color: $white-color;
+
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
 }

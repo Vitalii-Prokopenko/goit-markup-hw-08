@@ -1006,7 +1006,6 @@ section:not(.hero) {
 .footer__social-link:hover, .footer__social-link:focus {
   background-color: #2196f3;
 }
-
 /* Postal address not interactive contact in footer */
 .postal-address {
   font-size: 14px;
@@ -1014,7 +1013,6 @@ section:not(.hero) {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
 /* Studio social links */
 .social-links-heading-in-footer,
 .subscribe-heading {
@@ -1026,7 +1024,6 @@ section:not(.hero) {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
 /* === MODAL WINDOW === */
 .backdrop {
   position: fixed;

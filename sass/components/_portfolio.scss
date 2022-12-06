@@ -1,14 +1,13 @@
 /* Portfolio cards */
 
 .grid {
-  margin: -15px;
-
-  display: flex;
-  flex-wrap: wrap;
-
   @media screen and (min-width: $mobile) {
   }
   @media screen and (min-width: $tablet) {
+    margin: -15px;
+
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: $desktop) {
   }
@@ -21,11 +20,20 @@
     background-color: $white-color;
 
     @media screen and (min-width: $mobile) {
+      width: 450px;
     }
     @media screen and (min-width: $tablet) {
+      width: 354px;
     }
     @media screen and (min-width: $desktop) {
+      width: 370px;
     }
+  }
+
+  &__item:nth-child(-n+2) .project {
+    @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    height: 146px;
+  }
   }
 
   &__link {
@@ -62,9 +70,29 @@
 
   @media screen and (min-width: $mobile) {
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    
   }
   @media screen and (min-width: $desktop) {
+  }
+
+  
+
+  &__img {
+    max-width: 450px;
+
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+      height: 294px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+      height: 294px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 370px;
+      height: 294px;
+    }
   }
 
   &__name {
@@ -125,6 +153,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    height: 100%;
 
     padding: 63px 24px;
 

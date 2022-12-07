@@ -354,6 +354,11 @@ section:not(.hero) {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width(1199px)) {
+  .header__contacts {
+    display: block;
+  }
+}
 .header__contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -478,10 +483,14 @@ section:not(.hero) {
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);

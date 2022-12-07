@@ -28,7 +28,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
 
@@ -36,6 +36,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 
   &-container {
     position: relative;
@@ -222,11 +226,16 @@
 
   &__text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
 
     color: $main-color;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 
   &__contract-link {
@@ -241,7 +250,7 @@
     margin-right: 8px;
 
     width: 16px;
-    height: 14px;
+    height: 15px;
 
     border: 2px solid $second-color;
     border-radius: 4px;

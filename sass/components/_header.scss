@@ -23,6 +23,11 @@
     @media screen and (min-width: $desktop) {
     }
 
+    // @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    //   display: flex;
+    //   justify-content: flex-start;
+    // }
+
     &-item:not(:last-child) {
       @media screen and (min-width: $desktop) {
         margin-right: 50px;
@@ -47,6 +52,10 @@
       @media screen and (min-width: $desktop) {
         padding-top: 32px;
         padding-bottom: 32px;
+      }
+
+      @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+        justify-content: flex-start;
       }
     }
   }

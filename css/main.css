@@ -371,12 +371,16 @@ section:not(.hero) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 /* Logo */

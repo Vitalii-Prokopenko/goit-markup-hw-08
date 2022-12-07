@@ -32,14 +32,19 @@
     &-link {
       justify-content: center;
 
-      padding-top: 32px;
-      padding-bottom: 32px;
+      // padding-top: 32px;
+      // padding-bottom: 32px;
 
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: 0.02em;
 
       color: $main-color;
+
+      @media screen and (min-width: $desktop) {
+        padding-top: 32px;
+      padding-bottom: 32px;
+      }
     }
   }
 }

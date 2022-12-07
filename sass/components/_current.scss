@@ -3,6 +3,8 @@
 .current {
   color: $accent-color;
 
+  @media screen and (min-width: $tablet) {
+
   &::after {
     position: absolute;
     bottom: 0;
@@ -15,4 +17,5 @@
     content: '';
     background-color: $accent-color;
   }
+}
 }

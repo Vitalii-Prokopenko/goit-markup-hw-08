@@ -7,10 +7,20 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__contacts {
     margin-left: auto;
+
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
 
     &-item:not(:last-child) {
       margin-right: 50px;

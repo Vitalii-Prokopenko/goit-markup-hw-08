@@ -41,8 +41,9 @@
   // }
 
   &__link {
-display: flex;
+    display: flex;
     flex-direction: column;
+    // flex-grow: 1;
     height: 100%;
 
     transition-property: box-shadow;
@@ -72,7 +73,7 @@ display: flex;
 .project {
   padding: 20px 24px;
 
-    flex-grow: 1;
+  flex-grow: 1;
 
   border-left: 1px solid $portfolio-card-border-color;
   border-right: 1px solid $portfolio-card-border-color;

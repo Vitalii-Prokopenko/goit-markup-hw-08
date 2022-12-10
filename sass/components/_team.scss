@@ -1,7 +1,15 @@
 /* == Team section == */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: $background-color-second;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &-list {
     @media screen and (min-width: $mobile) {
@@ -91,7 +99,7 @@
 
   &__meta {
     padding: 30px 15px 24px;
-    
+
     @media screen and (min-width: $mobile) {
     }
     @media screen and (min-width: $tablet) {

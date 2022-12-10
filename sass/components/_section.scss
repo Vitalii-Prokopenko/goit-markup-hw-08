@@ -1,17 +1,29 @@
 /* Paddings for all sections except Hero */
 
-section:not(.hero) {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+// section:not(.hero) {
+//   padding-bottom: 94px;
+//   padding-top: 94px;
+// }
 
 /* Zero bottom padding for feature section */
 
 //overflows previous padding
 
-.features {
-  padding-bottom: 0;
+// .features {
+//   padding-bottom: 0;
+// }
+
+/* Margins for sections */
+
+section {
+  margin-bottom: 94px;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    margin-bottom: 60px;
+  }
 }
+
+
 
 /* Visually observed section elements */
 

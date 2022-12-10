@@ -87,14 +87,15 @@ body {
 }
 
 /* Paddings for all sections except Hero */
-section:not(.hero) {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 /* Zero bottom padding for feature section */
-.features {
-  padding-bottom: 0;
+/* Margins for sections */
+section {
+  margin-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  section {
+    margin-bottom: 60px;
+  }
 }
 
 /* Visually observed section elements */
@@ -829,7 +830,15 @@ section:not(.hero) {
 
 /* == Team section == */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+@media screen and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .team-list {
@@ -1219,7 +1228,6 @@ section:not(.hero) {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
 }
 .card__description {
   position: absolute;

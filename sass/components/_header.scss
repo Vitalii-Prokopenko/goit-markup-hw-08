@@ -20,13 +20,6 @@
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
       flex-direction: column;
     }
-    @media screen and (min-width: $desktop) {
-    }
-
-    // @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-    //   display: flex;
-    //   justify-content: flex-start;
-    // }
 
     &-item:not(:last-child) {
       @media screen and (min-width: $desktop) {
@@ -39,9 +32,6 @@
 
     &-link {
       justify-content: center;
-
-      // padding-top: 32px;
-      // padding-bottom: 32px;
 
       font-weight: 500;
       line-height: 1.14;

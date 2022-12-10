@@ -1,19 +1,4 @@
-/* Paddings for all sections except Hero */
-
-// section:not(.hero) {
-//   padding-bottom: 94px;
-//   padding-top: 94px;
-// }
-
-/* Zero bottom padding for feature section */
-
-//overflows previous padding
-
-// .features {
-//   padding-bottom: 0;
-// }
-
-/* Margins for sections */
+/* Margins and paddings for sections */
 
 .main-index,
 .main-portfolio {
@@ -26,10 +11,10 @@
 
 .main-portfolio {
   padding-top: 94px;
-  
+
   @media screen and (max-width: calc($desktop - 1px)) {
     padding-top: 60px;
-      }
+  }
 }
 
 section:not(.clients, .portfolio) {
@@ -39,8 +24,6 @@ section:not(.clients, .portfolio) {
     margin-bottom: 60px;
   }
 }
-
-
 
 /* Visually observed section elements */
 
@@ -55,12 +38,10 @@ section:not(.clients, .portfolio) {
   color: var(--second-color);
 }
 
+/* Visually hidden section for mobile and tablet */
+
 .activities {
   @media screen and (max-width: calc($desktop - 1px)) {
     display: none;
-  }
-  @media screen and (min-width: $tablet) {
-  }
-  @media screen and (min-width: $desktop) {
   }
 }

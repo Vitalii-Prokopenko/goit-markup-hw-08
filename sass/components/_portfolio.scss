@@ -1,15 +1,11 @@
 /* Portfolio cards */
 
 .grid {
-  @media screen and (min-width: $mobile) {
-  }
   @media screen and (min-width: $tablet) {
     margin: -15px;
 
     display: flex;
     flex-wrap: wrap;
-  }
-  @media screen and (min-width: $desktop) {
   }
 
   &__item {
@@ -34,38 +30,18 @@
     }
   }
 
-  // &__item:nth-child(-n+2) .project {
-  //   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-  //   height: 146px;
-  // }
-  // }
-
   &__link {
     display: flex;
     flex-direction: column;
-    // flex-grow: 1;
+
     height: 100%;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
-
     &:hover {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-      @media screen and (min-width: $mobile) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $desktop) {
-      }
     }
   }
 }
@@ -79,16 +55,10 @@
   border-right: 1px solid $portfolio-card-border-color;
   border-bottom: 1px solid $portfolio-card-border-color;
 
-  @media screen and (min-width: $mobile) {
-  }
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-  }
-  @media screen and (min-width: $desktop) {
   }
 
   &__img {
-    // max-width: 450px;
-
     @media screen and (min-width: $mobile) {
       width: 450px;
       height: 294px;
@@ -112,13 +82,6 @@
     letter-spacing: 0.06em;
 
     color: $second-color;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 
   &__type {
@@ -127,13 +90,6 @@
     letter-spacing: 0.03em;
 
     color: $main-color;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 }
 
@@ -147,13 +103,6 @@
     align-items: center;
 
     width: 100%;
-   
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 
   &__description {
@@ -177,22 +126,8 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
 
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
-
     .grid__link:hover & {
       transform: translateY(0%);
-
-      @media screen and (min-width: $mobile) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $desktop) {
-      }
     }
   }
 }

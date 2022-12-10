@@ -12,13 +12,9 @@
   }
 
   &-list {
-    @media screen and (min-width: $mobile) {
-    }
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
-    }
-    @media screen and (min-width: $desktop) {
     }
   }
 
@@ -42,39 +38,23 @@
       @media screen and (max-width: calc($desktop - 1px)) {
         margin-bottom: 30px;
       }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $desktop) {
-      }
     }
 
     &:nth-child(2n) {
-      @media screen and (min-width: $mobile) {
-      }
       @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
         margin-right: 0;
-      }
-      @media screen and (min-width: $desktop) {
       }
     }
 
     &:nth-child(4n) {
-      @media screen and (min-width: $mobile) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
       @media screen and (min-width: $desktop) {
         margin-right: 0;
       }
     }
 
     &:nth-last-child(-n + 2) {
-      @media screen and (min-width: $mobile) {
-      }
       @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
         margin-bottom: 0;
-      }
-      @media screen and (min-width: $desktop) {
       }
     }
   }
@@ -82,7 +62,6 @@
 
 .member {
   &__img {
-    // max-width: 450px;
     @media screen and (min-width: $mobile) {
       width: 450px;
       height: 460px;
@@ -100,10 +79,6 @@
   &__meta {
     padding: 30px 15px 24px;
 
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $desktop) {
       padding-bottom: 30px;
     }
@@ -120,13 +95,6 @@
     letter-spacing: 0.03em;
 
     color: $second-color;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 
   &__position {
@@ -138,36 +106,15 @@
     letter-spacing: 0.03em;
 
     color: $main-color;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 
   &__social-link {
     fill: $background-color-social-link;
     background-color: inherit;
 
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
-
     &:hover,
     &:focus {
       fill: $white-color;
-
-      @media screen and (min-width: $mobile) {
-      }
-      @media screen and (min-width: $tablet) {
-      }
-      @media screen and (min-width: $desktop) {
-      }
     }
   }
 }

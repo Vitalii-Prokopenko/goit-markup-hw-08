@@ -2,13 +2,10 @@
 
 .feature-list {
   width: 100%;
-  @media screen and (min-width: $mobile) {
-  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-  }
-  @media screen and (min-width: $desktop) {
   }
 
   &__item {
@@ -24,52 +21,29 @@
     }
   }
 
-&__item:not(:last-child) {
-
+  &__item:not(:last-child) {
     @media screen and (max-width: calc($desktop - 1px)) {
       margin-bottom: 30px;
     }
-    @media screen and (min-width: $tablet) {
-      
-    }
-    @media screen and (min-width: $desktop) {
-      
-    }
   }
 
-
-
-
   &__item:nth-child(2n) {
-    @media screen and (min-width: $mobile) {
-    }
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
       margin-right: 0;
-    }
-    @media screen and (min-width: $desktop) {
     }
   }
 
   &__item:nth-child(4n) {
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $desktop) {
       margin-right: 0;
     }
   }
 
-&__item:nth-last-child(-n+2) {
-    @media screen and (min-width: $mobile) {
-    }
+  &__item:nth-last-child(-n + 2) {
     @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
       margin-bottom: 0;
     }
-    @media screen and (min-width: $desktop) {
-    }
   }
-
 }
 
 .feature {
@@ -84,14 +58,6 @@
 
     background-color: $background-color-second;
     border-radius: 4px;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-      
-    }
   }
 
   &__heading {
@@ -103,26 +69,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $second-color;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-      
-    }
   }
 
   &__description {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-
-    @media screen and (min-width: $mobile) {
-    }
-    @media screen and (min-width: $tablet) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 }

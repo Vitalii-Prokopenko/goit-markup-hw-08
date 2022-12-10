@@ -15,7 +15,24 @@
 
 /* Margins for sections */
 
-section {
+.main-index,
+.main-portfolio {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    padding-bottom: 60px;
+  }
+}
+
+.main-portfolio {
+  padding-top: 94px;
+  
+  @media screen and (max-width: calc($desktop - 1px)) {
+    padding-top: 60px;
+      }
+}
+
+section:not(.clients, .portfolio) {
   margin-bottom: 94px;
 
   @media screen and (max-width: calc($desktop - 1px)) {

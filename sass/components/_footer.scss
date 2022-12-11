@@ -57,7 +57,7 @@
     &-link {
       justify-content: left;
 
-      line-height: 1.71;
+      line-height: calc(16 / 14);
       letter-spacing: 0.03em;
 
       color: $interactive-contacts-in-footer-color;
@@ -79,7 +79,7 @@
 
 .postal-address {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: $white-color;
 }
@@ -93,7 +93,7 @@
   text-transform: uppercase;
   text-align: justify;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 
   color: $white-color;

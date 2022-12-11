@@ -399,7 +399,7 @@ section:not(.clients, .portfolio) {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: #757575;
 }
@@ -720,7 +720,7 @@ section:not(.clients, .portfolio) {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -860,7 +860,7 @@ section:not(.clients, .portfolio) {
   width: 100%;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -1282,7 +1282,7 @@ section:not(.clients, .portfolio) {
   height: 100%;
   padding: 63px 24px;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9019607843);
@@ -1376,7 +1376,7 @@ section:not(.clients, .portfolio) {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  line-height: 1.71;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1391,7 +1391,7 @@ section:not(.clients, .portfolio) {
 /* Postal address not interactive contact in footer */
 .postal-address {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -1403,7 +1403,7 @@ section:not(.clients, .portfolio) {
   text-transform: uppercase;
   text-align: justify;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -1619,7 +1619,7 @@ section:not(.clients, .portfolio) {
           align-items: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;

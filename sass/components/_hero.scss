@@ -65,7 +65,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
@@ -85,7 +85,7 @@
     padding: 10px 32px;
 
     font-size: 16px;
-    line-height: 1.875;
+    line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     color: $white-color;
     background-color: $accent-color;

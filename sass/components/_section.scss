@@ -35,7 +35,7 @@ section:not(.clients, .portfolio) {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: $second-color;
 }
 
 /* Visually hidden section for mobile and tablet */

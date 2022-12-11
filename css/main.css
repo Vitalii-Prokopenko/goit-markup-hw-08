@@ -124,7 +124,7 @@ section:not(.clients, .portfolio) {
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-color);
+  color: #212121;
 }
 
 /* Visually hidden section for mobile and tablet */
@@ -545,8 +545,19 @@ section:not(.clients, .portfolio) {
   right: 15px;
 }
 
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .mobile-menu__list {
-  margin-bottom: 306px;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -583,6 +594,9 @@ section:not(.clients, .portfolio) {
 .mobile-menu__contacts-item:last-child {
   margin-bottom: 32px;
 }
+.mobile-menu__contacts-link {
+  font-weight: 500;
+}
 .mobile-menu__contacts .contacts__icon {
   display: none;
 }
@@ -612,12 +626,16 @@ section:not(.clients, .portfolio) {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+.mobile-menu__social-link:hover, .mobile-menu__social-link:focus {
+  background-color: transparent;
+}
 
 @media screen and (max-width: 767px) {
   .phone-contact {
     font-size: 34px;
     line-height: 1.1764705882;
     letter-spacing: 0.02em;
+    color: #2196f3;
   }
 }
 

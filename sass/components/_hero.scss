@@ -19,7 +19,7 @@
 
   // Mobile screen
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     background-image: linear-gradient(to right, $hero-gradient-color, $hero-gradient-color),
       url(../images/hero/hero-480.jpg);
 

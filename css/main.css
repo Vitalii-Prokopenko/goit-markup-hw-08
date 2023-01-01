@@ -246,6 +246,11 @@ section:not(.clients, .portfolio) {
     top: 3px;
   }
 }
+@media screen and (max-width: 479px) {
+  .subscribe-form__label {
+    left: 24px;
+  }
+}
 .subscribe-form__input {
   padding-left: 16px;
   width: 358px;
@@ -261,7 +266,12 @@ section:not(.clients, .portfolio) {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .subscribe-form__input {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe-form__input {
     width: 450px;
   }
@@ -824,6 +834,11 @@ section:not(.clients, .portfolio) {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .feature__heading {
+    text-align: center;
+  }
 }
 .feature__description {
   font-size: 14px;

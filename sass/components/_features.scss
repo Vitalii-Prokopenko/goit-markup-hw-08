@@ -69,6 +69,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $second-color;
+
+    @media screen and (max-width: calc($tablet - 1px)) {
+      text-align: center;
+    }
   }
 
   &__description {

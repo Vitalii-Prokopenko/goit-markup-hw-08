@@ -17,7 +17,7 @@ Used technologies:
 
 ### Template
 
-![template screenshot] (template/screen-template.jpg)
+![template screenshot] (/template/screen-template.jpg)
 
 ### Lighthouse results:
 

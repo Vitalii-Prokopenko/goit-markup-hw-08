@@ -11,6 +11,7 @@ Used technologies:
 
 + HTML 5.0
 + CSS 3.0
++ JavaScript
 + SASS
 + BEM
 + Mobile first

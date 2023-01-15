@@ -1,7 +1,11 @@
 # goit-marup-hw-08
 
-Landing page for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt
+Two-page website for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt
 school)
+
+# mobile 480px
+# tablet 768px
+# desktop 1200px 
 
 Used technologies:
 
@@ -9,6 +13,7 @@ Used technologies:
 2. CSS 3.0
 3. SASS
 4. BEM
+5. Mobile first
 
 **Lighthouse results**:
 

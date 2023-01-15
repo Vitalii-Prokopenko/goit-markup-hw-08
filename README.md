@@ -1,6 +1,7 @@
 # goit-marup-hw-08
 
-Landing page for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt school)
+Landing page for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt
+school)
 
 Used technologies:
 
@@ -13,14 +14,14 @@ Used technologies:
 
 **_Desktop_**:
 
-Performance - 95%
-Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
-Best practices - 92% (incorrect aspect ratio of images???)
-SEO - 90% (Links are not crawlable - not specified in template)
+1. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio -
+   specified in template)
+2. Best practices - 100%
+3. SEO - 90% (Links are not crawlable - not specified in template)
 
 **_Mobile_**:
 
-Performance - 79%
-Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio - specified in template)
-Best practices - 100%
-SEO - 90% (Links are not crawlable - not specified in template)
+1. Accessibility - 97% (Background and foreground colors do not have a sufficient contrast ratio -
+   specified in template)
+2. Best practices - 100%
+3. SEO - 90% (Links are not crawlable - not specified in template)

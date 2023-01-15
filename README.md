@@ -3,9 +3,9 @@
 Two-page website for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt
 school)
 
-# mobile 480px
-# tablet 768px
-# desktop 1200px 
+1. #mobile 480px
+2. #tablet 768px
+3. #desktop 1200px 
 
 Used technologies:
 

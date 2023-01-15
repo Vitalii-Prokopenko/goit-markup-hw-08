@@ -3,17 +3,17 @@
 Two-page website for web studio with mobile and tablet versions (homework on HTML+CSS 1.0 course at GoIt
 school)
 
-1. #mobile 480px
-2. #tablet 768px
-3. #desktop 1200px 
+> #mobile 480px
+> #tablet 768px
+> #desktop 1200px 
 
 Used technologies:
 
-1. HTML 5.0
-2. CSS 3.0
-3. SASS
-4. BEM
-5. Mobile first
+> HTML 5.0
+> CSS 3.0
+> SASS
+> BEM
+> Mobile first
 
 **Lighthouse results**:
 
